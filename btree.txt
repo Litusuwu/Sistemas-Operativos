@@ -1,0 +1,9 @@
+Pregunta4-+-Pregunta4-+-Pregunta4-+-Pregunta4
+          |           |           `-Pregunta4
+          |           `-Pregunta4-+-Pregunta4
+          |                       `-Pregunta4
+          |-Pregunta4-+-Pregunta4-+-Pregunta4
+          |           |           `-Pregunta4
+          |           `-Pregunta4-+-Pregunta4
+          |                       `-Pregunta4
+          `-sh---pstree
