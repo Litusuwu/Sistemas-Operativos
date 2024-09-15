@@ -1,0 +1,76 @@
+# Archivos de compilación
+*.o
+*.a
+*.so
+*.out
+*.exe
+*.dll
+
+# Archivos de backup
+*~
+*.bak
+*.swp
+*.swo
+*.orig
+
+# Directorios de construcción
+/build/
+/bin/
+/obj/
+/lib/
+
+# Directorios de proyectos de IDE
+/.vscode/
+/.idea/
+/*.code-workspace
+
+# Archivos de configuración de IDE
+*.launch
+*.user
+*.suo
+*.ncb
+*.sdf
+*.opendb
+*.VC.db
+.vscode/
+
+# Archivos de configuración de compilación
+Makefile
+CMakeCache.txt
+CMakeFiles/
+/CMakeScripts/
+CMakeLists.txt.user
+cmake_install.cmake
+CMakeLists.txt.user
+Makefile.old
+Makefile~
+
+# Archivos generados por autoconf/automake
+autom4te.cache/
+config.status
+config.log
+configure
+config.h
+config.h.in
+m4/
+aclocal.m4
+compile
+depcomp
+install-sh
+missing
+libtool
+ltmain.sh
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de empaquetado
+*.tar.gz
+*.zip
+
+# Archivos de logs
+*.log
+
+# Archivos temporales
+*.tmp
