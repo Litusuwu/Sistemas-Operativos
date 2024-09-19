@@ -21,6 +21,11 @@ char * read_file(char * buf, int num_buf) {
     cp2 = strstr(cp, " HTTP");
     if (cp2 != NULL) *cp2 = '\0';    
     // fetch file:
+    ////////////////////////////////////
+    if (strcmp(cp, "") == 0) {
+        cp = "index.html";
+    }
+    ////////////////////////////////////
     f = fopen(cp, "r");
     if (f == NULL) return error_return;
     i = fread(ret_buf, 1, 32768, f);    
@@ -37,8 +42,10 @@ void *thread_func(void * tsocket) {
 	long  c_sockfd = (long)tsocket;
 	char buffer[4000],*pbuf;
 	int n;
+    /////////////////
 	char header[]= "HTTP/1.1 200 OK\nContent-Type: text/html\n\n";
     write(c_sockfd, header, strlen(header));
+    //////////////////////
     n=read(c_sockfd, buffer, sizeof(buffer));     
     buffer[n]='\0';
     pbuf=read_file(buffer,4000);
