@@ -10,7 +10,7 @@ var(
 	index int
 	wg sync.WaitGroup
 	mu sync.Mutex
-	espacio = make(chan int, 5)
+	espacio = make(chan int, 1)
 	objetos = make(chan int, 5)
 
 )
@@ -45,7 +45,7 @@ func consumidor(){
 }
 func main(){
 	objetos = make(chan int, 5)
-	espacio = make(chan int, 5)
+	espacio = make(chan int, 1)
 	for i:=0;i<5;i++{
 		espacio<-1
 	}
